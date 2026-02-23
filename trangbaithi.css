@@ -1,0 +1,14 @@
+#logo{
+    height: 90px;
+    max-height: 90px;
+}
+#thanhdieuhuong{
+    background-color: rgb(5, 172, 213);
+    height: 40px;
+}
+.chucnang{
+    font-style:normal;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
