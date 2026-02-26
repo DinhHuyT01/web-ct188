@@ -1,14 +1,56 @@
 #logo{
     height: 90px;
-    max-height: 90px;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 101;
 }
 #thanhdieuhuong{
     background-color: rgb(5, 172, 213);
     height: 40px;
+    width: 100%;
+    left: 0;
+    top: 90px;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* Bộ font chuẩn: ưu tiên Segoe UI (Windows), Roboto (Android), sans-serif */
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; /* Giúp chữ thanh mảnh, sắc nét hơn */
 }
 .chucnang{
     font-style:normal;
-    margin-left: 10px;
-    font-size: 20px;
+    text-decoration: none;
+    margin-left: 0px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
+    padding-right: 10px;
+    font-weight: 500;
+}  
+
+.menu{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color: aqua;
+    overflow-x: hidden;  /* Ẩn thanh cuộn ngang */
+    overflow-y: auto;    /* Hiện thanh cuộn dọc khi cần */
+    padding-top: 20px;
+}
+.menu a{
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    display: block;
 }
