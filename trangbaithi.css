@@ -1,54 +1,66 @@
-#logo{
-    height: 90px;
-    position: fixed;
-    top: 0;
-    left: 10px;
-    z-index: 101;
-}
-#thanhdieuhuong{
-    background-color: rgb(5, 172, 213);
-    height: 40px;
-    width: 100%;
-    left: 0;
-    top: 90px;
-    position: fixed;
-    display: flex;
-    z-index: 100;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 20px;
-}
-body {
+body{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 40px 40px 1fr 80px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "menu chude"
+    "menu main"
+    "footer footer";
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    /* Bộ font chuẩn: ưu tiên Segoe UI (Windows), Roboto (Android), sans-serif */
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased; /* Giúp chữ thanh mảnh, sắc nét hơn */
+    }
+#logo{
+    height: 100%; 
+    margin-right: auto;
 }
-.chucnang{
-    font-style:normal;
-    text-decoration: none;
-    margin-left: 0px;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    padding-right: 10px;
-    font-weight: 500;
-}  
+header{
+    grid-area: header;
+    display: flex;
+    border: solid red;
+}
+main{
+    grid-area: main;
+    border: solid blue;   
+}
 
-.menu{
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 100px;
-    left: 0;
-    background-color: aqua;
-    overflow-x: hidden;  /* Ẩn thanh cuộn ngang */
-    overflow-y: auto;    /* Hiện thanh cuộn dọc khi cần */
-    padding-top: 20px;
+footer{
+    grid-area: footer;
+    border: solid green;
 }
-.menu a{
-    padding: 8px 16px;
+.menu{
+    grid-area: menu;
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu >a{
+    padding: 5px;    
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    border: solid powderblue;
+    justify-content: flex-end;
+}
+nav >a{
+    padding: 10px;
+}
+.menu h2{
+    font-size:25px;
+    font-weight: 1000;
+}
+.chude{
+    border: solid purple;
+    display: flex;
+    justify-content: flex-end;
+}
+.chude >a{
+    padding: 10px;
+}
+a{
     text-decoration: none;
     font-size: 15px;
     color: #000;
