@@ -2,9 +2,22 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luyện tập</title>
     <link rel="stylesheet" href="./trangbaithi.css">
 </head>
+<script>
+
+function hienThi(menu){
+
+    document.getElementById("htmlMenu").style.display="none";
+    document.getElementById("cssMenu").style.display="none";
+    document.getElementById("jsMenu").style.display="none";
+    document.getElementById(menu).style.display="block";
+
+}
+
+</script>
 <body>
     <header>
         <img src="HinhAnh/logo.png" alt="Logo" id="logo">   
@@ -13,22 +26,50 @@
             <a href="" class="chucnang" id="trangchu">Trang chủ</a>
             <a href="" class="chucnang" id="baihoc">Bài học</a>
             <a href="" class="chucnang" id="thithu">Thi thử</a>
+            <a href="" class="chucnang" id="dangnhap">Đăng ký</a>
             <a href="" class="chucnang" id="dangnhap">Đăng nhập</a>
     </nav>
     <div class="chude">
-        <a href="">HTML</a>
-        <a href="">CSS</a>
-        <a href="">JAVASCRIPT</a>
+        <a onclick="hienThi('htmlMenu')">HTML</a>
+        <a onclick="hienThi('cssMenu')">CSS</a>
+        <a onclick="hienThi('jsMenu')">JAVASCRIPT</a>
     </div>
     <div class="menu">
-        <h2 class="title-menu">Tiêu đề</h2>
-        <a href="#">Bài 1</a>
-        <a href="#">Bài 2</a>
-        <a href="#">Bài 3</a>
-        <a href="#">Bài 4</a>
-        <a href="#">Bài 5</a>
+        <div id="htmlMenu">
+            <h2 class="title-menu">Menu html</h2>
+            <div class="content">
+                <a href="#">Bài 1</a>
+                <a href="#">Bài 2</a>
+                <a href="#">Bài 3</a>
+                <a href="#">Bài 4</a>
+                <a href="#">Bài 5</a>
+            </div>
+        </div>
+        
+        <div id="cssMenu">
+            <h2 class="title-menu">Menu CSS</h2>
+            <div class="content">
+                <a href="#">Bài 1</a>
+                <a href="#">Bài 2</a>
+                <a href="#">Bài 3</a>
+                <a href="#">Bài 4</a>
+                <a href="#">Bài 5</a>
+            </div>
+        </div>
+
+        <div id="jsMenu">
+            <h2 class="title-menu">Menu JAVASCRIPT</h2>
+            <div class="content">
+                <a href="#">Bài 1</a>
+                <a href="#">Bài 2</a>
+                <a href="#">Bài 3</a>
+                <a href="#">Bài 4</a>
+                <a href="#">Bài 5</a>
+            </div>
+        </div>
+
     </div>
     <main></main>
-    <footer></footer>
+    <footer><h1>Nhóm 5</h1></footer>
 </body>
 </html>
