@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Hệ thống - CTU</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <main class="login-card">
+            
+            <div class="logo-area">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/6/6c/Logo_Dai_hoc_Can_Tho.svg" alt="Logo CTU">
+                <h1>HỆ THỐNG TRA CỨU</h1>
+                <p>Khoa CNTT & Truyền thông - CTU</p>
+            </div>
+
+            <form id="loginForm" class="form-content">
+                <div class="form-group">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" placeholder="Nhập tài khoản..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu..." required>
+                </div>
+
+                <p id="errorMessage" class="msg-error">Tài khoản hoặc mật khẩu không đúng!</p>
+
+                <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+            </form>
+
+            <footer class="card-footer">
+                <small>Học phần: Nhập môn lập trình Web (CT188)</small>
+            </footer>
+            
+        </main>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+</html>
