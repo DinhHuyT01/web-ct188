@@ -80,8 +80,6 @@ nav a:hover {
 main {
   display: flex;
   flex-wrap: nowrap;
-  /* gap: 20px; */
-  /* padding: 20px 3%; */
   align-items: start;
   flex: 1;
 }
@@ -91,7 +89,6 @@ main {
 .sidebar {
   flex: 0 0 260px;
   border-right: 5px solid #ffffff;
-  /* background-color: #dae5fc; */
   background-color: #F8F8FF;
   align-self: stretch;
   gap: 20px;
@@ -222,17 +219,6 @@ footer {
   padding: 10px;
   display: flex;
 }
-
-/* footer img {
-  height: 60px;
-  display: block;
-}
-
-.footer-content {
-  flex: 1 1 calc((100% - 48px) / 3);
-  min-width: 220px;
-  text-align: left;
-} */
 
 .copyright {
   flex-basis: 100%;
