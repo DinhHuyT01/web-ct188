@@ -12,6 +12,11 @@ function toggleSidebar() {
 // Đảm bảo rằng DOM đã được tải xong trước khi gán sự kiện click cho nút menu bên trái.
 document.addEventListener("DOMContentLoaded", function () {
 	const navLeft = document.querySelector(".nav-left");
+	const sidebar = document.querySelector(".sidebar");
+
+	if (window.matchMedia("(max-width: 480px)").matches && sidebar) {
+		sidebar.classList.toggle("is-hidden");
+	}
 
 	if (!navLeft) {
 		return;

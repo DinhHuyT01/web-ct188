@@ -190,7 +190,6 @@ pre {
 .categories {
   display: flex;
   align-items: center;
-  /* gap: 20px; */
 }
 
 .categories a {
@@ -199,7 +198,6 @@ pre {
   text-align: center;
   background-color: #dae5fc;
   padding: 10px;
-  /* border: 1px solid #ccc; */
   text-decoration: none;
   color: #34343a;
   font-weight: 600;
@@ -240,4 +238,98 @@ footer {
   flex-basis: 100%;
   text-align: center;
   font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  nav {
+    height: auto;
+    padding: 8px 10px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    display: flex;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .nav-right {
+    order: 2;
+    gap: 12px;
+  }
+
+  .nav-center {
+    order: 3;
+    position: static;
+    left: auto;
+    transform: none;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  nav a, nav p {
+    font-size: 13px;
+  }
+
+  nav a:hover {
+    font-size: 13px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 12px 4%;
+  }
+
+  .body {
+    width: 100%;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .categories a {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+
+  .lesson h2 {
+    padding: 0 4%;
+  }
+
+  .content {
+    padding: 0 4%;
+    margin: 0 0 16px 0;
+  }
+
+  .content ul li {
+    padding-left: 0;
+  }
+
+  .content p, .content li {
+    word-break: break-word;
+  }
+
+  pre {
+    margin: 6px 0 0;
+    width: 100%;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 }
