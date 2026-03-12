@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ - Website Học Tập</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo-circle"><img src="/logo.png" alt="logo"></div>
+            <div class="header-info">
+                <h1>Hệ Thống Học Tập CNTT</h1>
+                <p>Nền tảng tự học lập trình miễn phí</p>
+            </div>
+        </div>
+
+        <div class="header-auth">
+            <!-- <button class="btn-signup"> <a href="/login.html">Đăng ký</a></button> -->
+            <button class="btn-login"> <a href="/login.html">Đăng nhập</a></button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-label"></span>
+            <ul class="nav-links">
+                <li><a href="/trangchu.html" class="active">Trang chủ</a></li>
+                <li><a href="/baihoc.html">Bài học</a></li>
+                <li><a href="/trangbaithi.html">Thi thử</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="content-title">Nội Dung Nổi Bật</h2>
+<!-- 
+        <div class="search-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm bài học (HTML, CSS, JS...)" id="searchInput">
+                <button type="button" id="searchBtn">Tìm</button>
+            </div>
+        </div> -->
+
+        <div class="lesson-grid" id="lessonGrid">
+            <div class="card">
+                <div class="card-header">Bài viết: HTML cơ bản</div>
+                <div class="card-body">
+                    <div class="img-placeholder"><img src="/html.png" alt="logo html"></div>
+                    <p>Học cách xây dựng cấu trúc website...</p>
+                    <a href="/baihoc/baihoc-html-bai2.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Bài viết: CSS Design</div>
+                <div class="card-body">
+                    <div class="img-placeholder"><img src="/css.png" alt="logo css"></div>
+                    <p>Làm chủ màu sắc và bố cục trang web...</p>
+                    <a href="/baihoc/baihoc-css-bai1.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Bài viết: Javascript</div>
+                <div class="card-body">
+                    <div class="img-placeholder"><img src="/JavaScript.png" alt="logo JavaScript"></div>
+                    <p>Xử lý logic và tương tác người dùng...</p>
+                    <a href="/baihoc/baihoc-js-bai1.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Bài viết: Luyện tập</div>
+                <div class="card-body">
+                    <div class="placeholder"><img src="/luyentap.png" alt="ảnh luyện tập"></div>
+                    <p>Tổng hợp các bài tập thực hành...</p>
+                    <a href="/trangbaithi.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="noResult" style="display: none; margin-top: 20px; color: #888;">
+            Không tìm thấy bài học nào phù hợp.
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 Website Học Tập - Nhóm 5</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
