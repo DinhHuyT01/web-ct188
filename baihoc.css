@@ -82,6 +82,7 @@ main {
   flex-wrap: nowrap;
   align-items: start;
   flex: 1;
+  position: relative;
 }
 
 /* SIDEBAR */
@@ -271,10 +272,13 @@ footer {
   }
 
   .sidebar {
-    border-right: none;
-    border-bottom: 1px solid #e5e5e5;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 12px 4%;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+    overflow-y: auto;
+    border-radius: 0 0 12px 0;
   }
 
   .body {
