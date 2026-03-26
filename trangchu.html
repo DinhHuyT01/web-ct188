@@ -1,97 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Trang Chủ - Website Học Tập</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="trangchu.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ Trình Web</title>
 </head>
 <body>
-
-    <header class="main-header">
-        <div class="header-left">
-            <div class="logo-circle"><img src="/logo.png" alt="logo"></div>
-            <div class="header-info">
-                <h1>Hệ Thống Học Tập CNTT</h1>
-                <p>Nền tảng tự học lập trình miễn phí</p>
-            </div>
-        </div>
-
-        <div class="header-auth">
-            <!-- <button class="btn-signup"> <a href="/login.html">Đăng ký</a></button> -->
-            <button class="btn-login"> <a href="/login.html">Đăng nhập</a></button>
-        </div>
-    </header>
-
     <nav class="navbar">
-        <div class="nav-container">
-            <span class="nav-label"></span>
+        <div class="container nav-container">
+            <div class="logo-area">
+                <div class="logo-circle">IT</div>
+                <span class="logo-text">NHÓM 5</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="/trangchu.html" class="active">Trang chủ</a></li>
+                <li><a href="trangchu.html" class="active">Trang chủ</a></li>
                 <li><a href="/baihoc.html">Bài học</a></li>
-                <li><a href="/trangbaithi.html">Thi thử</a></li>
+                <li><a href="/trangbaithi.html">Thi Thử</a></li>
             </ul>
+            <div class="nav-auth">
+                <a href="#" class="btn-icon">🛒</a>
+                <a href="/login.html" class="btn-primary">Đăng nhập</a>
+            </div>
         </div>
     </nav>
 
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Chinh Phục Lập Trình WEB</h1>
+            <p>Học lập trình từ con số 0 với lộ trình bài bản và hoàn toàn miễn phí.</p>
+        </div>
+    </header>
+
     <main class="container">
-        <h2 class="content-title">Nội Dung Nổi Bật</h2>
-<!-- 
-        <div class="search-section">
-            <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm bài học (HTML, CSS, JS...)" id="searchInput">
-                <button type="button" id="searchBtn">Tìm</button>
-            </div>
-        </div> -->
+        <section class="courses-section">
+            <h2 class="title-center">Lộ Trình Cốt Lõi</h2>
+            <div class="course-grid">
+                
+                <div class="course-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/Understanding-HTML-Image-Maps-with-Examples-700x420.jpg" alt="HTML">
+                            <div class="card-label"><h3>HTML</h3></div>
+                        </div>
+                        <div class="card-back">
+                            <h3>HTML</h3>
+                            <p>Học cách xây dựng cấu trúc website chuẩn SEO, làm chủ các thẻ HTML5 và thuộc tính quan trọng.</p>
+                            <a href="/baihoc.html" class="btn-go">Vào bài học →</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="lesson-grid" id="lessonGrid">
-            <div class="card">
-                <div class="card-header">Bài viết: HTML cơ bản</div>
-                <div class="card-body">
-                    <div class="img-placeholder"><img src="/html.png" alt="logo html"></div>
-                    <p>Học cách xây dựng cấu trúc website...</p>
-                    <a href="/baihoc/baihoc-html-bai1.html" class="btn-detail">Xem chi tiết</a>
+                <div class="course-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/html-css-javascript-la-gi-20220930161516-993040.jpg" alt="CSS">
+                            <div class="card-label"><h3>CSS</h3></div>
+                        </div>
+                        <div class="card-back">
+                            <h3>CSS</h3>
+                            <p>Hô biến giao diện trở nên lung linh với Flexbox, Grid, Animation và tư duy thiết kế Responsive.</p>
+                            <a href="/baihoc/baihoc-css-bai1.html" class="btn-go">Vào bài học →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/Gemini_Generated_Image_ynahsaynahsaynah.png" alt="JS">
+                            <div class="card-label"><h3>JavaScript</h3></div>
+                        </div>
+                        <div class="card-back">
+                            <h3>JavaScript</h3>
+                            <p>Tạo tương tác mạnh mẽ cho trang web, xử lý dữ liệu thực tế và làm quen với lập trình hướng đối tượng.</p>
+                            <a href="/baihoc/baihoc-js-bai1.html" class="btn-go">Vào bài học →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <article class="product-section">
+            <h1>Sản Phẩm Tham Khảo Thêm</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge-premium">Premium</span>
+                    <div class="product-img-box">
+                        <img src="/1.png" alt="PHP Book">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lập Trình PHP & MySQL</h3>
+                        <p class="price">388.000 đ</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp001" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp001')">Đặt hàng</button>
+                        </div>
+                    </div>
+                </div> <div class="product-card">
+                    <span class="badge-sale">- 79%</span>
+                    <span class="badge-premium">Premium</span>
+                    <div class="product-img-box"><img src="/2.png" alt="Web Design"></div>
+                    <div class="product-info">
+                        <h3>Learning Web Design</h3>
+                        <p class="price">388.000 đ</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp002" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp002')">Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge-premium">Premium</span>
+                    <div class="product-img-box"><img src="/3.png" alt="HTML Book"></div>
+                    <div class="product-info">
+                        <h3>Tự Học HTML</h3>
+                        <p class="price">388.000 đ</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp003" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp003')">Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box"><img src="/4.png" alt="Dreamweaver"></div>
+                    <div class="product-info">
+                        <h3>Thiết Kế Dreamweaver</h3>
+                        <p class="price">388.000 đ</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp004" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp004')">Đặt hàng</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-header">Bài viết: CSS Design</div>
-                <div class="card-body">
-                    <div class="img-placeholder"><img src="/css.png" alt="logo css"></div>
-                    <p>Làm chủ màu sắc và bố cục trang web...</p>
-                    <a href="/baihoc/baihoc-css-bai1.html" class="btn-detail">Xem chi tiết</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">Bài viết: Javascript</div>
-                <div class="card-body">
-                    <div class="img-placeholder"><img src="/JavaScript.png" alt="logo JavaScript"></div>
-                    <p>Xử lý logic và tương tác người dùng...</p>
-                    <a href="/baihoc/baihoc-js-bai1.html" class="btn-detail">Xem chi tiết</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">Bài viết: Luyện tập</div>
-                <div class="card-body">
-                    <div class="placeholder"><img src="/luyentap.png" alt="ảnh luyện tập"></div>
-                    <p>Tổng hợp các bài tập thực hành...</p>
-                    <a href="/trangbaithi.html" class="btn-detail">Xem chi tiết</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="noResult" style="display: none; margin-top: 20px; color: #888;">
-            Không tìm thấy bài học nào phù hợp.
-        </div>
+        </article> 
     </main>
 
-    <footer class="main-footer">
-        <p>© 2026 Website Học Tập - Nhóm 5</p>
+    <footer class="footer">
+        <p>© 2026 Designed by Nhóm 5</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="trangchu.js"></script>
 </body>
-
 </html>
