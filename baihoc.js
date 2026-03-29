@@ -29,13 +29,13 @@ function syncSidebarState() {
 
 // Đảm bảo rằng DOM đã được tải xong trước khi gán sự kiện click cho nút menu bên trái.
 document.addEventListener("DOMContentLoaded", function () {
-	const navLeft = document.querySelector(".nav-left");
+	const Menu = document.querySelector(".menu");
 	syncSidebarState();
 
-	if (!navLeft) {
+	if (!Menu) {
 		return;
 	}
 
-	navLeft.addEventListener("click", toggleSidebar);
+	Menu.addEventListener("click", toggleSidebar);
 	window.addEventListener("resize", syncSidebarState);
 });

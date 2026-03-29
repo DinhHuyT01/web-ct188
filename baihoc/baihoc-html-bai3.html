@@ -11,53 +11,53 @@
     
     <body>
         <header>
-            <div class="logo">
-                <img src="/Group_V-removebg-preview.png" alt="Logo">
-                <div class="brand-text">
-                    <h1>Easy Code</h1>
-                    <p>Học lập trình dễ dàng dành cho người mới bắt đầu</p>
-                </div>
-            </div>
-            <nav>
-                <div class="nav-left">
-                    <p><i class="fas fa-bars"></i></p>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../logo.png" alt="Logo">
+                    <div class="brand-text">
+                        <p>NHÓM 5</p>
+                    </div>
                 </div>
 
                 <div class="nav-center">
                     <a href="../trangchu.html">Trang Chủ</a>
-                    <a href="../baihoc.html">Bài Học</a>
+                    <a href="../baihoc.html" class="active">Bài Học</a>
                     <a href="../trangbaithi.html">Thi Thử</a>
                 </div>
 
                 <div class="nav-right">
-                    <a href=#>Đăng Ký</a>
-                    <a href="../login.html">Đăng Nhập</a>
+                    <a href="#" class="cart">🛒</a>
+                    <a href="../login.html" class="lg-btn">Đăng Nhập</a>
                 </div>
             </nav>
         </header>
 
       <main>
-            <!-- Menu Bài Học -->
-            <div class="sidebar">
-                <h2>Danh Sách Bài Học</h2>
-                <ul>
-                    <li><a href="../baihoc.html">Giới thiệu về HTML và cấu trúc một trang web</a></li>
-                    <li><a href="baihoc-html-bai2.html">Các thẻ HTML phổ biến: heading, paragraph, link, image</a></li>
-                    <li><a href="baihoc-html-bai3.html" id="l-current">Tạo danh sách, bảng và biểu mẫu trong HTML</a></li>
-                    <li><a href="baihoc-html-bai4.html">Cách sử dụng thuộc tính và định dạng nội dung trong HTML</a></li>
-                    <li><a href="baihoc-html-bai5.html">Xây dựng trang web đơn giản hoàn chỉnh bằng HTML</a></li>
-                    <p>Sẽ cập nhật thêm trong tương lai...</p>
-                </ul>
-            </div>
-
             <!-- CONTENT -->
             <div class="body">
                 <div class="categories">
-                    <a href="../baihoc.html" id="c-current">HTML</a>
+                    <div class="menu">
+                        <p><i class="fas fa-bars"></i></p>
+                    </div>
+                    <a href="../baihoc.html" id="c-active">HTML</a>
                     <a href="baihoc-css-bai1.html">CSS</a>
                     <a href="baihoc-js-bai1.html">JavaScript</a>
                 </div>
+
                 <section class="lesson">
+                    <!-- Menu Bài Học -->
+                    <div class="sidebar">
+                        <h2>Danh Sách Bài Học</h2>
+                        <ul>
+                            <li><a href="../baihoc.html">Giới thiệu về HTML và cấu trúc một trang web</a></li>
+                            <li><a href="baihoc-html-bai2.html">Các thẻ HTML phổ biến: heading, paragraph, link, image</a></li>
+                            <li><a href="baihoc-html-bai3.html" id="l-active">Tạo danh sách, bảng và biểu mẫu trong HTML</a></li>
+                            <li><a href="baihoc-html-bai4.html">Cách sử dụng thuộc tính và định dạng nội dung trong HTML</a></li>
+                            <li><a href="baihoc-html-bai5.html">Xây dựng trang web đơn giản hoàn chỉnh bằng HTML</a></li>
+                        </ul>
+                        <p>Sẽ cập nhật thêm trong tương lai...</p>
+                    </div>
+                    
                     <div class="content">
                         <h2>Tạo danh sách, bảng và biểu mẫu trong HTML</h2>
                         <h3>1. Danh sách</h3>

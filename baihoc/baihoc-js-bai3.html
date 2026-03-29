@@ -11,53 +11,52 @@
     
     <body>
         <header>
-            <div class="logo">
-                <img src="/Group_V-removebg-preview.png" alt="Logo">
-                <div class="brand-text">
-                    <h1>Easy Code</h1>
-                    <p>Học lập trình dễ dàng dành cho người mới bắt đầu</p>
-                </div>
-            </div>
-            <nav>
-                <div class="nav-left">
-                    <p><i class="fas fa-bars"></i></p>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../logo.png" alt="Logo">
+                    <div class="brand-text">
+                        <p>NHÓM 5</p>
+                    </div>
                 </div>
 
                 <div class="nav-center">
                     <a href="../trangchu.html">Trang Chủ</a>
-                    <a href="../baihoc.html">Bài Học</a>
+                    <a href="../baihoc.html" class="active">Bài Học</a>
                     <a href="../trangbaithi.html">Thi Thử</a>
                 </div>
 
                 <div class="nav-right">
-                    <a href=#>Đăng Ký</a>
-                    <a href="../login.html">Đăng Nhập</a>
+                    <a href="#" class="cart">🛒</a>
+                    <a href="../login.html" class="lg-btn">Đăng Nhập</a>
                 </div>
             </nav>
         </header>
 
       <main>
-            <!-- Menu Bài Học -->
-            <div class="sidebar">
-                <h2>Danh Sách Bài Học</h2>
-                <ul>
-                    <li><a href="baihoc-js-bai1.html">Giới thiệu về JavaScript và cách chèn JavaScript vào trang web</a></li>
-                    <li><a href="baihoc-js-bai2.html">Biến và kiểu dữ liệu trong JavaScript</a></li>
-                    <li><a href="baihoc-js-bai3.html" id="l-current">Toán tử và biểu thức trong JavaScript</a></li>
-                    <li><a href="baihoc-js-bai4.html">Các hàm trong JavaScript</a></li>
-                    <li><a href="baihoc-js-bai5.html">Điều kiện và vòng lặp trong JavaScript</a></li>
-                </ul>
-                <p>Sẽ cập nhật thêm trong tương lai...</p>
-            </div>
-
-            <!-- CONTENT -->    
+            <!-- CONTENT -->
             <div class="body">
                 <div class="categories">
+                    <div class="menu">
+                        <p><i class="fas fa-bars"></i></p>
+                    </div>
                     <a href="../baihoc.html">HTML</a>
                     <a href="baihoc-css-bai1.html">CSS</a>
-                    <a href="baihoc-js-bai1.html" id="c-current">JavaScript</a>
+                    <a href="baihoc-js-bai1.html" id="c-active">JavaScript</a>
                 </div>
                 <section class="lesson">
+                    <!-- Menu Bài Học -->
+                    <div class="sidebar">
+                        <h2>Danh Sách Bài Học</h2>
+                        <ul>
+                            <li><a href="baihoc-js-bai1.html" id="l-active">Giới thiệu về JavaScript và cách chèn JavaScript vào trang web</a></li>
+                            <li><a href="baihoc-js-bai2.html">Biến và kiểu dữ liệu trong JavaScript</a></li>
+                            <li><a href="baihoc-js-bai3.html">Toán tử và biểu thức trong JavaScript</a></li>
+                            <li><a href="baihoc-js-bai4.html">Các hàm trong JavaScript</a></li>
+                            <li><a href="baihoc-js-bai5.html">Điều kiện và vòng lặp trong JavaScript</a></li>
+                        </ul>
+                        <p>Sẽ cập nhật thêm trong tương lai...</p>
+                    </div>
+
                     <div class="content">
                         <h2>Toán tử và biểu thức trong JavaScript</h2>
                         <h3>1. Toán tử là gì?</h3>

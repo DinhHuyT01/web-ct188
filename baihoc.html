@@ -11,55 +11,54 @@
     
     <body>
         <header>
-            <div class="logo">
-                <img src="/Group_V-removebg-preview.png" alt="Logo">
-                <div class="brand-text">
-                    <h1>Easy Code</h1>
-                    <p>Học lập trình dễ dàng dành cho người mới bắt đầu</p>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                    <div class="brand-text">
+                        <p>NHÓM 5</p>
+                    </div>
                 </div>
-            </div>
-            <nav>
-                <div class="nav-left">
-                    <p><i class="fas fa-bars"></i></p>
-                </div>
-
                 <div class="nav-center">
                     <a href="trangchu.html">Trang Chủ</a>
-                    <a href="baihoc.html">Bài Học</a>
+                    <a href="baihoc.html" class="active">Bài Học</a>
                     <a href="trangbaithi.html">Thi Thử</a>
                 </div>
 
                 <div class="nav-right">
-                    <a href=#>Đăng Ký</a>
-                    <a href="login.html">Đăng Nhập</a>
+                    <a href="#" class="cart">🛒</a>
+                    <a href="login.html" class="lg-btn">Đăng Nhập</a>
                 </div>
             </nav>
         </header>
 
       <main>
-            <!-- Menu Bài Học -->
-            <div class="sidebar">
-                <h2>Danh Sách Bài Học</h2>
-                <ul>
-                    <li><a href="baihoc.html" id="l-current">Giới thiệu về HTML và cấu trúc một trang web</a></li>
-                    <li><a href="baihoc/baihoc-html-bai2.html">Các thẻ HTML phổ biến: heading, paragraph, link, image</a></li>
-                    <li><a href="baihoc/baihoc-html-bai3.html">Tạo danh sách, bảng và biểu mẫu trong HTML</a></li>
-                    <li><a href="baihoc/baihoc-html-bai4.html">Cách sử dụng thuộc tính và định dạng nội dung trong HTML</a></li>
-                    <li><a href="baihoc/baihoc-html-bai5.html">Xây dựng trang web đơn giản hoàn chỉnh bằng HTML</a></li>
-                </ul>
-                <p>Sẽ cập nhật thêm trong tương lai...</p>
-            </div>
-
             <!-- CONTENT -->
             <div class="body">
                 <div class="categories">
-                    <a href="baihoc.html" id="c-current">HTML</a>
+                    <div class="menu">
+                        <p><i class="fas fa-bars"></i></p>
+                    </div>
+                    <a href="baihoc.html" id="c-active">HTML</a>
                     <a href="baihoc/baihoc-css-bai1.html">CSS</a>
                     <a href="baihoc/baihoc-js-bai1.html">JavaScript</a>
                 </div>
+
                 <section class="lesson">
-                    <h2>Giới thiệu về HTML và cấu trúc một trang web</h2>
+                    <!-- Menu Bài Học -->
+                    <div class="sidebar">
+                        <h2>Danh Sách Bài Học</h2>
+                        <ul>
+                            <li><a href="baihoc.html" id="l-active">Giới thiệu về HTML và cấu trúc một trang web</a></li>
+                            <li><a href="baihoc/baihoc-html-bai2.html">Các thẻ HTML phổ biến: heading, paragraph, link, image</a></li>
+                            <li><a href="baihoc/baihoc-html-bai3.html">Tạo danh sách, bảng và biểu mẫu trong HTML</a></li>
+                            <li><a href="baihoc/baihoc-html-bai4.html">Cách sử dụng thuộc tính và định dạng nội dung trong HTML</a></li>
+                            <li><a href="baihoc/baihoc-html-bai5.html">Xây dựng trang web đơn giản hoàn chỉnh bằng HTML</a></li>
+                        </ul>
+                        <p>Sẽ cập nhật thêm trong tương lai...</p>
+                    </div>
+                    
                     <div class="content">
+                        <h2>Giới thiệu về HTML và cấu trúc một trang web</h2>
                         <h3>1. HTML là gì?</h3>
                         <p>HTML (HyperText Markup Language) là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của một trang web. HTML giúp trình duyệt hiểu và hiển thị nội dung như văn bản, hình ảnh, liên kết, bảng biểu và nhiều thành phần khác.</p>
                         <p>HTML không phải là ngôn ngữ lập trình vì nó không xử lý logic hay thuật toán. Nó chỉ dùng để tổ chức và trình bày nội dung.</p>

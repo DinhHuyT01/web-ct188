@@ -11,53 +11,52 @@
     
     <body>
         <header>
-            <div class="logo">
-                <img src="/Group_V-removebg-preview.png" alt="Logo">
-                <div class="brand-text">
-                    <h1>Easy Code</h1>
-                    <p>Học lập trình dễ dàng dành cho người mới bắt đầu</p>
-                </div>
-            </div>
-            <nav>
-                <div class="nav-left">
-                    <p><i class="fas fa-bars"></i></p>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../logo.png" alt="Logo">
+                    <div class="brand-text">
+                        <p>NHÓM 5</p>
+                    </div>
                 </div>
 
                 <div class="nav-center">
                     <a href="../trangchu.html">Trang Chủ</a>
-                    <a href="../baihoc.html">Bài Học</a>
+                    <a href="../baihoc.html" class="active">Bài Học</a>
                     <a href="../trangbaithi.html">Thi Thử</a>
                 </div>
 
                 <div class="nav-right">
-                    <a href=#>Đăng Ký</a>
-                    <a href="../login.html">Đăng Nhập</a>
+                    <a href="#" class="cart">🛒</a>
+                    <a href="../login.html" class="lg-btn">Đăng Nhập</a>
                 </div>
             </nav>
         </header>
 
       <main>
-            <!-- Menu Bài Học -->
-            <div class="sidebar">
-                <h2>Danh Sách Bài Học</h2>
-                <ul>
-                    <li><a href="baihoc-css-bai1.html">Giới thiệu về CSS và cách kết nối CSS với HTML</a></li>
-                    <li><a href="baihoc-css-bai2.html">Selectors và cách áp dụng kiểu cho phần tử</a></li>
-                    <li><a href="baihoc-css-bai3.html">Màu sắc, font chữ và định dạng văn bản trong CSS</a></li>
-                    <li><a href="baihoc-css-bai4.html">Box Model: margin, padding, border và kích thước phần tử</a></li>
-                    <li><a href="baihoc-css-bai5.html" id="l-current">Bố cục cơ bản với Flexbox và định vị (position)</a></li>
-                </ul>
-                <p>Sẽ cập nhật thêm trong tương lai...</p>
-            </div>
-
             <!-- CONTENT -->
             <div class="body">
                 <div class="categories">
+                    <div class="menu">
+                        <p><i class="fas fa-bars"></i></p>
+                    </div>
                     <a href="../baihoc.html">HTML</a>
-                    <a href="baihoc-css-bai1.html" id="c-current">CSS</a>
+                    <a href="baihoc-css-bai1.html" id="c-active">CSS</a>
                     <a href="baihoc-js-bai1.html">JavaScript</a>
                 </div>
                 <section class="lesson">
+                    <!-- Menu Bài Học -->
+                    <div class="sidebar">
+                        <h2>Danh Sách Bài Học</h2>
+                        <ul>
+                            <li><a href="baihoc-css-bai1.html">Giới thiệu về CSS và cách kết nối CSS với HTML</a></li>
+                            <li><a href="baihoc-css-bai2.html">Selectors và cách áp dụng kiểu cho phần tử</a></li>
+                            <li><a href="baihoc-css-bai3.html">Màu sắc, font chữ và định dạng văn bản trong CSS</a></li>
+                            <li><a href="baihoc-css-bai4.html">Box Model: margin, padding, border và kích thước phần tử</a></li>
+                            <li><a href="baihoc-css-bai5.html" id="l-active">Bố cục cơ bản với Flexbox và định vị (position)</a></li>
+                        </ul>
+                        <p>Sẽ cập nhật thêm trong tương lai...</p>
+                    </div>
+
                     <div class="content">
                         <h2>Bố cục cơ bản với Flexbox và định vị (position)</h2>
                         <h3>1. Tại sao cần bố cục?</h3>
