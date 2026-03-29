@@ -45,6 +45,10 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-sm);
+    position:fixed ;
+    right: 0;
+    left: 0;
+    top:0;
 }
 
 .nav-container {
