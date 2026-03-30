@@ -1,34 +1,37 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="trangchu.css">
-    <title>Lộ Trình Web</title>
+    <link rel="stylesheet" href="CSS/trangchu.css">
+    <title>Lập Trình Web</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo-area">
-                <div class="logo-circle"><img src="/logo.jpg" alt=""></div>
+                <img src="HinhAnh/logo.png" alt="Logo EASY CODE" class="logo-img">
                 <span class="logo-text">EASY CODE</span>
             </div>
             <ul class="nav-links">
                 <li><a href="trangchu.html" class="active">Trang chủ</a></li>
                 <li><a href="/baihoc.html">Bài học</a></li>
-                <li><a href="/trangbaithi.html">Thi Thử</a></li>
+                <li><a href="/trangbaithi.html">Thi Thử </a></li>
             </ul>
-            <div class="nav-auth">
-                <a href="#" class="btn-icon">🛒</a>
-                <a href="/login.html" class="btn-primary">Đăng nhập</a>
+            <div class="nav-auth" id="authContainer">
+                <a href="cart.html" class="btn-icon cart-link">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="/login.html" class="btn-primary" id="loginBtn">Đăng nhập</a>
             </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container hero-content">
-            <h1>Chinh Phục Lập Trình</h1>
-            <p>Học lập trình dễ dàng dành cho người mới bắt đầu.</p>
+            <h1>Chinh Phục Lập Trình WEB</h1>
+            <p>Học lập trình từ con số 0 với lộ trình bài bản và hoàn toàn miễn phí.</p>
         </div>
     </header>
 
@@ -40,12 +43,12 @@
                 <div class="course-card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="/Understanding-HTML-Image-Maps-with-Examples-700x420.jpg" alt="HTML">
+                            <img src="HinhAnh/html.png" alt="HTML">
                             <div class="card-label"><h3>HTML</h3></div>
                         </div>
                         <div class="card-back">
                             <h3>HTML</h3>
-                            <p>HTML (Bộ khung xương): HTML giống như việc bạn dựng cột, xây tường, phân chia các phòng. Nó tạo nên cấu trúc thô của ngôi nhà. Nhà có cửa chính, cửa sổ và mái, nhưng chưa có màu sắc hay nội thất.</p>
+                            <p>Học cách xây dựng cấu trúc website chuẩn SEO, làm chủ các thẻ HTML5 và thuộc tính quan trọng.</p>
                             <a href="/baihoc.html" class="btn-go">Vào bài học →</a>
                         </div>
                     </div>
@@ -54,12 +57,12 @@
                 <div class="course-card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="/html-css-javascript-la-gi-20220930161516-993040.jpg" alt="CSS">
+                            <img src="HinhAnh/css.png" alt="CSS">
                             <div class="card-label"><h3>CSS</h3></div>
                         </div>
                         <div class="card-back">
                             <h3>CSS</h3>
-                            <p>CSS (Trang trí và Thẩm mỹ): CSS (Cascading Style Sheets) đóng vai trò như sơn tường, lát gạch và bố trí nội thất. CSS giúp ngôi nhà trở nên đẹp mắt. CSS quy định màu sắc, phông chữ, khoảng cách và bố cục hiển thị trên các thiết bị khác nhau.</p>
+                            <p>Hô biến giao diện trở nên lung linh với Flexbox, Grid, Animation và tư duy thiết kế Responsive.</p>
                             <a href="/baihoc/baihoc-css-bai1.html" class="btn-go">Vào bài học →</a>
                         </div>
                     </div>
@@ -68,12 +71,12 @@
                 <div class="course-card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="/Gemini_Generated_Image_ynahsaynahsaynah.png" alt="JS">
+                            <img src="HinhAnh/JavaScript.png" alt="JS">
                             <div class="card-label"><h3>JavaScript</h3></div>
                         </div>
                         <div class="card-back">
                             <h3>JavaScript</h3>
-                            <p>JavaScript (Chức năng và Tương tác): JavaScript giống như hệ thống điện, nước và các thiết bị thông minh trong nhà. Nó giúp ngôi nhà “hoạt động”. Khi bạn bấm công tắc, đèn sáng. Khi có người đến gần, cửa tự động mở. JavaScript tạo ra các hiệu ứng động và xử lý tương tác của người dùng trên website.</p>
+                            <p>Tạo tương tác mạnh mẽ cho trang web, xử lý dữ liệu thực tế và làm quen với lập trình hướng đối tượng.</p>
                             <a href="/baihoc/baihoc-js-bai1.html" class="btn-go">Vào bài học →</a>
                         </div>
                     </div>
@@ -88,62 +91,108 @@
                 <div class="product-card">
                     <span class="badge-premium">Premium</span>
                     <div class="product-img-box">
-                        <img src="/1.png" alt="PHP Book">
+                        <img src="HinhAnh/Lập Trình PHP & MySQL.jpg" alt="PHP Book">
                     </div>
                     <div class="product-info">
                         <h3>Lập Trình PHP & MySQL</h3>
-                        <p class="price">388.000 đ</p>
+                        <p class="price">345.000 VND</p>
                         <div class="order-controls">
                             <input type="number" id="sp001" min="1" value="1">
                             <button class="btn-order" onclick="addCart('sp001')">Đặt hàng</button>
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
                         </div>
                     </div>
                 </div> <div class="product-card">
-                    <span class="badge-sale">- 79%</span>
+                    <span class="badge-sale">- 30%</span>
                     <span class="badge-premium">Premium</span>
-                    <div class="product-img-box"><img src="/2.png" alt="Web Design"></div>
+                    <div class="product-img-box"><img src="HinhAnh/Learning Web Design.jpg" alt="Web Design"></div>
                     <div class="product-info">
                         <h3>Learning Web Design</h3>
-                        <p class="price">388.000 đ</p>
+                        <p class="price">279.000 VND</p>
                         <div class="order-controls">
                             <input type="number" id="sp002" min="1" value="1">
-                            <button class="btn-order" onclick="addCart('sp002')">Đặt hàng</button>
+                            <button class="btn-order" onclick="addCart('sp002')">Đặt hàng</button>  
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <span class="badge-premium">Premium</span>
-                    <div class="product-img-box"><img src="/3.png" alt="HTML Book"></div>
+                    <div class="product-img-box"><img src="HinhAnh/Tự Học HTML.jpg" alt="HTML Book"></div>
                     <div class="product-info">
                         <h3>Tự Học HTML</h3>
-                        <p class="price">388.000 đ</p>
+                        <p class="price">199.000 VND</p>
                         <div class="order-controls">
                             <input type="number" id="sp003" min="1" value="1">
-                            <button class="btn-order" onclick="addCart('sp003')">Đặt hàng</button>
+                            <button class="btn-order" onclick="addCart('sp003')">Đặt hàng</button> 
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>                                                   
                         </div>
                     </div>
                 </div>
 
                 <div class="product-card">
-                    <div class="product-img-box"><img src="/4.png" alt="Dreamweaver"></div>
+                    <div class="product-img-box"><img src="HinhAnh/Thiết Kế Dreamweaver.jpg" alt="Dreamweaver"></div>
                     <div class="product-info">
                         <h3>Thiết Kế Dreamweaver</h3>
-                        <p class="price">388.000 đ</p>
+                        <p class="price">235.000 VND</p>
                         <div class="order-controls">
                             <input type="number" id="sp004" min="1" value="1">
                             <button class="btn-order" onclick="addCart('sp004')">Đặt hàng</button>
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="product-card">
+                    <div class="product-img-box"><img src="HinhAnh/Clean Code.jpg" alt="Clean Code"></div>
+                    <div class="product-info">
+                        <h3>Clean Code</h3>
+                        <p class="price">299.000 VND</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp005" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp005')">Đặt hàng</button>
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box"><img src="HinhAnh/Refactoring.jpg" alt="Refactoring"></div>
+                    <div class="product-info">
+                        <h3>Refactoring</h3>
+                        <p class="price">350.000 VND</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp006" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp006')">Đặt hàng</button>
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box"><img src="HinhAnh/Design Patterns.jpg" alt="Design Patterns"></div>
+                    <div class="product-info">
+                        <h3>Design Patterns</h3>
+                        <p class="price">410.000 VND</p>
+                        <div class="order-controls">
+                            <input type="number" id="sp007" min="1" value="1">
+                            <button class="btn-order" onclick="addCart('sp007')">Đặt hàng</button>
+                            <button class="btn-detail" onclick="openDetailBook(event)">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+
         </article> 
     </main>
-
     <footer class="footer">
-        <p>© 2026 Easy Code. All rights reserved. Được thực hiện bởi nhóm 5</p>
+        <p>© 2026 Easy Code. All rights reserved. Được thực hiện bởi EASY CODE</p>
     </footer>
 
-    <script src="trangchu.js"></script>
+    <script src="JS/cart.js"></script>
+    <script src="JS/trangchu.js"></script>
+    <script src="JS/account.js"></script>
 </body>
 </html>
+
+

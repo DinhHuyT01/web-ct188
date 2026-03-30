@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/trangchu.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <title>Giỏ Hàng</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="HinhAnh/logo.png" alt="Logo EASY CODE" class="logo-img">
+                <span class="logo-text">EASY CODE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="baihoc.html">Bài học</a></li>
+                <li><a href="trangbaithi.html">Thi Thử</a></li>
+            </ul>
+            <div class="nav-auth" id="authContainer">
+                <a href="cart.html" class="btn-icon cart-link">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="login.html" class="btn-primary" id="loginBtn">Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container cart-container">
+        <div class="breadcrumb">
+            <a href="trangchu.html">Trang chủ</a> / Giỏ hàng
+        </div>
+
+        <h1 class="cart-title">Giỏ Hàng Của Bạn</h1>
+
+        <div class="cart-content">
+            <!-- Danh sách sản phẩm -->
+            <div class="cart-items-section">
+                <div class="cart-header">
+                    <div class="col-check">
+                        <input type="checkbox" id="selectAll" class="checkbox-select-all">
+                    </div>
+                    <div class="col-product">Sản phẩm</div>
+                    <div class="col-price">Giá</div>
+                    <div class="col-quantity">Số lượng</div>
+                    <div class="col-total">Thành tiền</div>
+                    <div class="col-action">Hành động</div>
+                </div>
+                <div id="cartItems" class="cart-items-list">
+                    <!-- Sản phẩm sẽ được render bằng JS -->
+                </div>
+                <div id="emptyCart" class="empty-cart-message">
+                    <p>Giỏ hàng của bạn đang trống</p>
+                    <a href="trangchu.html" class="btn-continue-shopping">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+
+            <!-- Tóm tắt đơn hàng -->
+            <div class="cart-summary">
+                <h2>Đơn hàng</h2>
+                
+                <div class="summary-item">
+                    <span>Tổng tiền sách:</span>
+                    <span id="subtotal">0 đ</span>
+                </div>
+
+                <div class="summary-item">
+                    <label for="shipping">Vận chuyển:</label>
+                    <select id="shipping" class="shipping-select">
+                        <option value="0">Miễn phí</option>
+                        <option value="25000">Vận chuyển nhanh: +25.000 đ</option>
+                        <option value="50000">Vận chuyển siêu tốc: +50.000 đ</option>
+                    </select>
+                </div>
+
+                <div class="summary-item">
+                    <label for="coupon">Mã giảm giá:</label>
+                    <div class="coupon-input">
+                        <input type="text" id="coupon" placeholder="Nhập mã giảm giá">
+                        <button id="applyCoupon" class="btn-apply-coupon">Áp dụng</button>
+                    </div>
+                </div>
+
+                <div class="summary-item" id="discountRow" style="display: none;">
+                    <span>Giảm giá:</span>
+                    <span id="discount" class="discount-text">-0 đ</span>
+                </div>
+
+                <div class="summary-item shipping-cost">
+                    <span>Phí vận chuyển:</span>
+                    <span id="shippingCost">0 đ</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span>Tổng cộng:</span>
+                    <span id="totalPrice" class="total-amount">0 đ</span>
+                </div>
+
+                <button id="checkoutBtn" class="btn-checkout">Thanh toán</button>
+                <a href="trangchu.html" class="btn-continue-shopping-link">← Tiếp tục mua sắm</a>
+            </div>
+        </div>
+
+        <!-- Form thông tin giao hàng -->
+        <div id="shippingForm" class="shipping-form" style="display: none;">
+            <h2>Thông Tin Giao Hàng</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="fullName">Họ và tên:</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ giao hàng:</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Ghi chú (tùy chọn):</label>
+                    <textarea id="notes" rows="2"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="backToCart" class="btn-secondary">Quay lại giỏ hàng</button>
+                    <button type="submit" class="btn-checkout">Đặt hàng</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Designed by EASY CODE</p>
+    </footer>
+
+    <script src="JS/cart.js"></script>
+    <script src="JS/account.js"></script>
+</body>
+</html>
+
+

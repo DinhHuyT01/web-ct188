@@ -1,35 +1,35 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bài Học</title>
-        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="baihoc.css">
+        <link rel="shortcut icon" href="/Group_V-removebg-preview.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/trangchu.css">
+        <link rel="stylesheet" href="CSS/baihoc.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     </head>
     
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo-container">
-                    <div class="logo">
-                        <img src="logo.jpg" alt="Logo">
+                <div class="container nav-container">
+                    <div class="logo-area">
+                        <img src="HinhAnh/logo.png" alt="Logo EASY CODE" class="logo-img">
+                        <span class="logo-text">EASY CODE</span>
                     </div>
-                    <div class="brand-text">
-                        <p>EASY CODE</p>
+                    <ul class="nav-links">
+                        <li><a href="trangchu.html">Trang chủ</a></li>
+                        <li><a href="baihoc.html" class="active">Bài học</a></li>
+                        <li><a href="trangbaithi.html">Thi Thử</a></li>
+                    </ul>
+                    <div class="nav-auth" id="authContainer">
+                        <a href="cart.html" class="btn-icon cart-link">
+                            🛒
+                            <span class="cart-badge" id="cartBadge">0</span>
+                        </a>
+                        <a href="login.html" class="btn-primary" id="loginBtn">Đăng nhập</a>
                     </div>
-                </div>
-                
-                <div class="nav-center">
-                    <a href="trangchu.html">Trang Chủ</a>
-                    <a href="baihoc.html" class="active">Bài Học</a>
-                    <a href="trangbaithi.html">Thi Thử</a>
-                </div>
-
-                <div class="nav-right">
-                    <a href="#" class="cart">🛒</a>
-                    <a href="login.html" class="lg-btn">Đăng Nhập</a>
                 </div>
             </nav>
         </header>
@@ -106,9 +106,12 @@
 
         <footer>
             <div class="copyright">
-                <p>© 2026 Easy Code. All rights reserved. Được thực hiện bởi nhóm 5</p>
+                <p>© 2026 Easy Code. All rights reserved. Được thực hiện bởi EASY CODE</p>
             </div>
         </footer>
-        <script src="baihoc.js"></script>
+        <script src="JS/cart.js"></script>
+        <script src="JS/account.js"></script>
     </body>
 </html>
+
+

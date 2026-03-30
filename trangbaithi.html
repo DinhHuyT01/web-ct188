@@ -1,75 +1,117 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luyện tập</title>
-    <link rel="stylesheet" href="./trangbaithi.css">
+    <title>Thi Thử - Easy Code</title>
+    <link rel="stylesheet" href="CSS/trangchu.css">
+    <link rel="stylesheet" href="CSS/trangbaithi.css">
 </head>
-<script>
-
-function hienThi(menu){
-
-    document.getElementById("htmlMenu").style.display="none";
-    document.getElementById("cssMenu").style.display="none";
-    document.getElementById("jsMenu").style.display="none";
-    document.getElementById(menu).style.display="block";
-
-}
-
-</script>
 <body>
     <header>
-        <img src="HinhAnh/logo.png" alt="Logo" id="logo">   
-    </header>
-    <nav>
-            <a href="" class="chucnang" id="trangchu">Trang chủ</a>
-            <a href="" class="chucnang" id="baihoc">Bài học</a>
-            <a href="" class="chucnang" id="thithu">Thi thử</a>
-            <a href="" class="chucnang" id="dangnhap">Đăng ký</a>
-            <a href="login.html" class="chucnang" id="dangnhap">Đăng nhập</a>
-    </nav>
-    <div class="chude">
-        <a onclick="hienThi('htmlMenu')">HTML</a>
-        <a onclick="hienThi('cssMenu')">CSS</a>
-        <a onclick="hienThi('jsMenu')">JAVASCRIPT</a>
-    </div>
-    <div class="menu">
-        <div id="htmlMenu">
-            <h2 class="title-menu">Menu html</h2>
-            <div class="content">
-                <a href="#">Bài 1</a>
-                <a href="#">Bài 2</a>
-                <a href="#">Bài 3</a>
-                <a href="#">Bài 4</a>
-                <a href="#">Bài 5</a>
-            </div>
-        </div>
-        
-        <div id="cssMenu">
-            <h2 class="title-menu">Menu CSS</h2>
-            <div class="content">
-                <a href="#">Bài 1</a>
-                <a href="#">Bài 2</a>
-                <a href="#">Bài 3</a>
-                <a href="#">Bài 4</a>
-                <a href="#">Bài 5</a>
-            </div>
-        </div>
+            <nav class="navbar">
+                <div class="container nav-container">
+                    <div class="logo-area">
+                        <img src="../HinhAnh/logo.png" alt="Logo EASY CODE" class="logo-img">
+                        <span class="logo-text">EASY CODE</span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="../trangchu.html">Trang chủ</a></li>
+                        <li><a href="../baihoc.html" class="active">Bài học</a></li>
+                        <li><a href="../trangbaithi.html">Thi Thử</a></li>
+                    </ul>
+                    <div class="nav-auth" id="authContainer">
+                        <a href="../cart.html" class="btn-icon cart-link">
+                            🛒
+                            <span class="cart-badge" id="cartBadge">0</span>
+                        </a>
+                        <a href="../login.html" class="btn-primary" id="loginBtn">Đăng nhập</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <div id="jsMenu">
-            <h2 class="title-menu">Menu JAVASCRIPT</h2>
-            <div class="content">
-                <a href="#">Bài 1</a>
-                <a href="#">Bài 2</a>
-                <a href="#">Bài 3</a>
-                <a href="#">Bài 4</a>
-                <a href="#">Bài 5</a>
-            </div>
-        </div>
+    <main>
+        <div class="body">
+            <section class="lesson">
+                <div class="content">
+                    <div class="quiz-header">
+                        <h1 class="quiz-title">🏆 Thi Thử Lập Trình Web</h1>
+                        <p class="quiz-subtitle">Kiểm tra kiến thức của bạn từ cơ bản đến nâng cao</p>
+                    </div>
 
-    </div>
-    <main></main>
-    <footer><h1>Nhóm 5</h1></footer>
+                    <div class="subject-selection">
+                        <div class="subject-tabs">
+                            <button class="subject-tab active" onclick="selectSubject('html')">📄 HTML</button>
+                            <button class="subject-tab" onclick="selectSubject('css')">🎨 CSS</button>
+                            <button class="subject-tab" onclick="selectSubject('js')">⚡ JavaScript</button>
+                        </div>
+                    </div>
+
+                    <div id="levelSelection" class="level-selection">
+                        <h2 class="section-title">Chọn cấp độ</h2>
+                        <div class="level-cards">
+                            <div class="level-card" onclick="startQuiz('basic')">
+                                <div class="level-icon">🌱</div>
+                                <h3>Cơ bản</h3>
+                                <p>10 câu hỏi</p>
+                            </div>
+                            <div class="level-card" onclick="startQuiz('intermediate')">
+                                <div class="level-icon">🚀</div>
+                                <h3>Trung cấp</h3>
+                                <p>15 câu hỏi</p>
+                            </div>
+                            <div class="level-card" onclick="startQuiz('advanced')">
+                                <div class="level-icon">💎</div>
+                                <h3>Nâng cao</h3>
+                                <p>20 câu hỏi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="quizContainer" class="quiz-container" style="display:none;">
+                        <div class="quiz-header-info">
+                            <div class="quiz-progress"><span id="currentQuestion">1</span>/<span id="totalQuestions">10</span></div>
+                            <div class="quiz-timer"><span id="timer">15:00</span></div>
+                        </div>
+                        <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+                        <div class="question-card">
+                            <h3 id="questionText" class="question-text"></h3>
+                            <div id="optionsContainer" class="options-container"></div>
+                        </div>
+                        <div class="quiz-controls">
+                            <button id="prevBtn" class="btn-secondary" onclick="previousQuestion()" style="display:none;">⬅️ Câu trước</button>
+                            <button id="nextBtn" class="btn-primary" onclick="nextQuestion()">Câu tiếp theo ➡️</button>
+                            <button id="submitBtn" class="btn-success" onclick="submitQuiz()" style="display:none;">✅ Nộp bài</button>
+                        </div>
+                    </div>
+
+                    <div id="resultsContainer" class="results-container" style="display:none;">
+                        <div class="results-header"><h2 id="resultsTitle">Kết quả bài thi</h2><div id="scoreCircle" class="score-circle"><span id="scorePercentage">0%</span></div></div>
+                        <div class="results-details"><div class="result-stat"><span class="stat-label">Đúng:</span><span id="correctAnswers" class="stat-value correct">0</span></div><div class="result-stat"><span class="stat-label">Sai:</span><span id="wrongAnswers" class="stat-value wrong">0</span></div><div class="result-stat"><span class="stat-label">Thời gian:</span><span id="timeTaken" class="stat-value">0:00</span></div></div>
+                        <div class="results-actions"><button class="btn-primary" onclick="reviewAnswers()">📝 Xem lại</button><button class="btn-secondary" onclick="retakeQuiz()">🔄 Làm lại</button><button class="btn-outline" onclick="backToLevels()">🏠 Về chọn cấp độ</button></div>
+                    </div>
+
+                    <div id="reviewContainer" class="review-container" style="display:none;">
+                        <h2>Xem lại câu hỏi</h2>
+                        <div id="reviewQuestions"></div>
+                        <button class="btn-primary" onclick="backToResults()">⬅️ Quay lại kết quả</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright"><p>© 2026 Easy Code. All rights reserved. Được thực hiện bởi EASY CODE</p></div>
+        </div>
+    </footer>
+
+    <script src="JS/cart.js"></script>
+    <script src="JS/account.js"></script>
+    <script src="JS/quiz.js"></script>
 </body>
 </html>
+
+
